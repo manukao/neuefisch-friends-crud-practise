@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Manu Kao",
+    "avatar": "https://randomuser.me/api/portraits/men/1.jpg",
+    "email": "manukao@gmail.com",
+    "bootcamp": "Web Dev",
+    "start": "2023-02-06",
+    "status": "Active"
+  },
+  {
+    "id": 2,
+    "name": "Anton Roters",
+    "avatar": "https://randomuser.me/api/portraits/men/1.jpg",
+    "email": "antonr@gmail.com",
+    "bootcamp": "Web Dev",
+    "start": "2023-02-06",
+    "status": "Active"
+  },
+  {
+    "id": 3,
+    "name": "Joshua Stolle",
+    "avatar": "https://randomuser.me/api/portraits/men/1.jpg",
+    "email": "joshsto@gmail.com",
+    "bootcamp": "Web Dev",
+    "start": "2023-02-06",
+    "status": "Active"
+  }
+]
