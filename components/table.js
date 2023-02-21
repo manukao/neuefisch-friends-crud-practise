@@ -1,3 +1,5 @@
+import { BiEdit, BiTrashAlt } from "react-icons/bi";
+
 export default function Table() {
   return (
     <table className="min-w-full table-auto">
@@ -10,7 +12,7 @@ export default function Table() {
             <span className="text-gray-200">Email</span>
           </th>
           <th className="px-16 py-2">
-            <span className="text-gray-200">Salary</span>
+            <span className="text-gray-200">Bootcamp</span>
           </th>
           <th className="px-16 py-2">
             <span className="text-gray-200">Birthday</span>
@@ -30,6 +32,30 @@ export default function Table() {
             <span className="text-center ml-2 font-semibold">
               Daily Tuition
             </span>
+          </td>
+          <td className="px-16 py-2 f">
+            <span className="">dailytuition@gmail.com</span>
+          </td>
+          <td className="px-16 py-2 f">
+            <span className="">Web Dev</span>
+          </td>
+          <td className="px-16 py-2 f">
+            <span className="">10-05-2022</span>
+          </td>
+          <td className="px-16 py-2 f">
+            <button className="cursor">
+              <span className="bg-green-500 text-white px-5 py-1 rounded-full">
+                Active
+              </span>
+            </button>
+          </td>
+          <td className="px-16 py-2 flex justify-around gap-5">
+            <button className="cursor">
+              <BiEdit size={25} color={"rgb(34,197,94)"}></BiEdit>
+            </button>
+            <button className="cursor">
+              <BiTrashAlt size={25} color={"rgb(244,63,94)"}></BiTrashAlt>
+            </button>
           </td>
         </tr>
       </tbody>
