@@ -15,7 +15,7 @@ export default function Table() {
             <span className="text-gray-200">Bootcamp</span>
           </th>
           <th className="px-16 py-2">
-            <span className="text-gray-200">Birthday</span>
+            <span className="text-gray-200">Start</span>
           </th>
           <th className="px-16 py-2">
             <span className="text-gray-200">Status</span>
@@ -29,12 +29,10 @@ export default function Table() {
         <tr className="bg-gray-50 text-center">
           <td className="px-16 py-2 flex flex-row items-center">
             <img src="#" alt="" />
-            <span className="text-center ml-2 font-semibold">
-              Daily Tuition
-            </span>
+            <span className="text-center ml-2 font-semibold">Manu Kao</span>
           </td>
           <td className="px-16 py-2 f">
-            <span className="">dailytuition@gmail.com</span>
+            <span className="">manukao@gmail.com</span>
           </td>
           <td className="px-16 py-2 f">
             <span className="">Web Dev</span>
