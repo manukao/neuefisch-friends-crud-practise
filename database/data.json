@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Manu Kao",
     "avatar": "https://randomuser.me/api/portraits/men/1.jpg",
-    "email": "manukao@gmail.com",
+    "email": "manuk@gmail.com",
     "bootcamp": "Web Dev",
     "start": "2023-02-06",
     "status": "Active"
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "name": "Anton Roters",
-    "avatar": "https://randomuser.me/api/portraits/men/1.jpg",
+    "avatar": "https://randomuser.me/api/portraits/men/2.jpg",
     "email": "antonr@gmail.com",
     "bootcamp": "Web Dev",
     "start": "2023-02-06",
@@ -20,8 +20,8 @@
   {
     "id": 3,
     "name": "Joshua Stolle",
-    "avatar": "https://randomuser.me/api/portraits/men/1.jpg",
-    "email": "joshsto@gmail.com",
+    "avatar": "https://randomuser.me/api/portraits/men/3.jpg",
+    "email": "joshso@gmail.com",
     "bootcamp": "Web Dev",
     "start": "2023-02-06",
     "status": "Active"
