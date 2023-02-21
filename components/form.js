@@ -1,9 +1,27 @@
+import { useReducer } from "react";
+import { BiPlus } from "react-icons/bi";
+
+const formReducer = (state, event) => {
+  return {
+    ...state,
+    [event.target.name]: event.target.value,
+  };
+};
+
 export default function Form() {
+  const [formData, setFormData] = useReducer(formReducer, {});
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+  };
+
   return (
-    <form action="" className="grid lg:grid-cols-2 w-4/6 gap-4">
+    <form className="grid lg:grid-cols-2 w-4/6 gap-4" onSubmit={handleSubmit}>
       <div className="input-type">
         <input
           type="text"
+          onChange={setFormData}
           name="firstname"
           className="border w-full px-5 py-3 focus:outline-none rounded-md"
           placeholder="FirstName"
@@ -13,6 +31,7 @@ export default function Form() {
       <div className="input-type">
         <input
           type="text"
+          onChange={setFormData}
           name="lastname"
           className="border w-full px-5 py-3 focus:outline-none rounded-md"
           placeholder="LastName"
@@ -22,6 +41,7 @@ export default function Form() {
       <div className="input-type">
         <input
           type="text"
+          onChange={setFormData}
           name="email"
           className="border w-full px-5 py-3 focus:outline-none rounded-md"
           placeholder="Email"
@@ -31,6 +51,7 @@ export default function Form() {
       <div className="input-type">
         <input
           type="text"
+          onChange={setFormData}
           name="bootcamp"
           className="border w-full px-5 py-3 focus:outline-none rounded-md"
           placeholder="Bootcamp"
@@ -40,6 +61,7 @@ export default function Form() {
       <div className="input-type">
         <input
           type="date"
+          onChange={setFormData}
           name="start"
           className="border w-full px-5 py-3 focus:outline-none rounded-md"
           placeholder="Start"
@@ -50,6 +72,7 @@ export default function Form() {
         <div className="form-check">
           <input
             type="radio"
+            onChange={setFormData}
             value="Active"
             id="radioDefault1"
             name="status"
@@ -63,6 +86,7 @@ export default function Form() {
         <div className="form-check">
           <input
             type="radio"
+            onChange={setFormData}
             value="Inactive"
             id="radioDefault2"
             name="status"
@@ -75,7 +99,10 @@ export default function Form() {
       </div>
 
       <button className="flex justify-center text-md w-2/6 bg-green-500 text-white px-4 py-2 border rounded-md hover:bg-gray-50 hover:border-green-500 hover:text-green-500">
-        Add
+        Add{" "}
+        <span className="px-1">
+          <BiPlus size={24}></BiPlus>
+        </span>
       </button>
     </form>
   );
