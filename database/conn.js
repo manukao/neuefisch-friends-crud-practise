@@ -1,10 +1,8 @@
-const MONGO_URI =
-  "mongodb+srv://admin:nff123.@nextjs-neuefischefriend.jm4xz77.mongodb.net/?retryWrites=true&w=majority";
-import mongoose, { mongo } from "mongoose";
+import mongoose from "mongoose";
 
 const connectMongo = async () => {
   try {
-    const { connection } = await mongoose.connect(MONGO_URI);
+    const { connection } = await mongoose.connect(process.env.MONGO_URI);
     if (connection.readyState == 1) {
       console.log("Database Connected");
     }
